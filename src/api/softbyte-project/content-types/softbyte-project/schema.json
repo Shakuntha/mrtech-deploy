@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "softbyte_projects",
+  "info": {
+    "singularName": "softbyte-project",
+    "pluralName": "softbyte-projects",
+    "displayName": "Softbyte Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 32
+    },
+    "CoverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "LargeDescription": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 420,
+      "minLength": 100
+    },
+    "Link": {
+      "type": "string"
+    },
+    "SmallDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 220,
+      "minLength": 100
+    },
+    "Position": {
+      "type": "enumeration",
+      "enum": [
+        "Right",
+        "Left"
+      ],
+      "required": true
+    },
+    "HighlightedTitle": {
+      "type": "string",
+      "maxLength": 6,
+      "required": false
+    },
+    "icons": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Image1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Image2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    }
+  }
+}
